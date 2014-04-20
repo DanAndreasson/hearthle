@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" ng-app="HearthstoneHelper">
+<head>
+  	<script src="js/angular/angular.min.js"></script>
+	<script src="js/angular/angular-resource.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="style/app.css">
+</head>
+<body>
+ 
+ 	<div class="wrapper" ng-controller="SearchCtrl">
+ 		<div class="search-container">
+	 		<div class="logo"> 
+	 			<h1>Hearthle</h1>
+	 		</div>
+	 		<input class="search-field" type="text" ng-model="search">
+
+	 	</div>
+
+	 	<div class="cards">
+			<div class="card" ng-repeat="card in cards | filter:search" style="background-image: url('{{card.image_url}}');">
+				<!--
+				<div class="card-name">{{ card.name }}</div>
+				<div class="card-mana">{{ card.mana }}<div>
+				<div class="card-attack">{{ card.attack }}</div>
+				<div class="card-health">{{ card.health }}</div>
+			-->
+			</div>
+		</div>
+ 	</div>
+ 
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
