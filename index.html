@@ -1,25 +1,44 @@
 <!doctype html>
 <html lang="en" ng-app="HearthstoneHelper">
-<head>  	
+<head>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style/app.css">
 </head>
 <body>
- 
+
  	<div class="wrapper" ng-controller="SearchCtrl">
- 		<div class="search-container">
-	 		<div class="logo"> 
-	 			<h1>Hearthle</h1>
-	 		</div>
-	 		<input class="search-field" type="text" ng-model="search">
+		<div class="main">
+	 		<div class="search-container">
+		 		<div class="logo">
+		 			<h1>Hearthle</h1>
+		 		</div>
+		 		<input class="search-field" type="text" ng-model="search" autofocus>
 
-	 	</div>
+		 	</div>
 
-	 	<div class="cards">
-			<div class="card" ng-repeat="card in cards | filter:search" style="background-image: url('{{card.image_url}}');">
+		 	<div class="cards">
+				<div class="card" ng-repeat="card in cards | filter:search" style="background-image: url('{{card.image_url}}');">
+				</div>
 			</div>
+	 	</div>
+		<div class="information">
+					<h3 class="information-title">What is Hearthle?</h3>
+					<p>
+							Hearthle is built to be used while your playing Hearthstone. Find
+							out what Nozdormu actually do, or list all new naxxramas cards.
+
+							The website is built by me, <a href="http://danandreasson.se">Dan Andreasson </a>
+							and is using <a href="https://github.com/pdyck/hearthstone-db">Pdyck's Hearthstone-db</a>
+							as source.
+
+							Have any features you'd like implemented, or just wanna contact me for
+							some reason? My email is <a href="mailto:dan@danandreasson.se">Dan@DanAndreasson.se</a>
+
+							Good luck & Have fun!
+					</p>
 		</div>
- 	</div>
+	</div>
+
 	<script src="js/angular/angular.min.js"></script>
 	<script src="js/angular/angular-resource.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
