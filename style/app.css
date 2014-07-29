@@ -20,14 +20,18 @@ h1 {
 	color: #fefefe;
 }
 
+a{
+	color: #FF9900;
+}
+
 .wrapper{
 	width: 100%;
-	max-width: 1024px;
+	max-width: 1124px;
 	margin: 0 auto;
 }
 
 .main {
-	width: 824px;
+	width: 924px;
 	float: left;
 }
 
@@ -35,8 +39,11 @@ h1 {
 	float: left;
 	width: 200px;
 	background: rgba(0,0,0,0.5);
-	padding: 10px;
+	padding: 15px;
 	line-height: 1.5em;
+	margin-top: 50px;
+	font-size: 11pt;
+	border-radius: 3px;
 }
 
 
