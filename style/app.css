@@ -9,7 +9,7 @@ body, html{
 	background-color: #222;
 	color: #efefef;
 	font-family: 'Open Sans', sans-serif;
-	background: url(../images/wallpaper.png) no-repeat center center fixed;
+	background: url(../images/bg.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -28,7 +28,7 @@ a{
 .wrapper{
 	width: 100%;
 	max-width: 1224px;
-	margin: 0 auto;
+	margin: 20px auto;
 }
 
 .main {
@@ -67,9 +67,8 @@ a{
 .search-container .search-field{
 	padding: 15px;
 	border: #888;
-	width: 80%;
-	max-width: 500px;
-	margin: 0px auto;
+	width: 90%;
+	margin: 5px auto;
 	display: block;
 	border-radius: 5px;
 }
