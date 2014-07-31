@@ -9,7 +9,7 @@ body, html{
 	background-color: #222;
 	color: #efefef;
 	font-family: 'Open Sans', sans-serif;
-	background: url(../images/bg.jpg) no-repeat center center fixed;
+	background: url(../images/wallpaper.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -36,13 +36,19 @@ a{
 	float: left;
 }
 
+.right-col {
+	width: 300px;
+	float: left;
+	margin-top: 50px;
+}
+
 .information {
 	float: left;
-	width: 300px;
+	width: 100%;
 	background: rgba(0,0,0,0.5);
 	padding: 15px;
 	line-height: 1.5em;
-	margin-top: 50px;
+	margin-bottom: 10px;
 	font-size: 11pt;
 	border-radius: 3px;
 }
