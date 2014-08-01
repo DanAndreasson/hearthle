@@ -28,7 +28,11 @@ a{
 .wrapper{
 	width: 100%;
 	max-width: 1224px;
-	margin: 20px auto;
+	margin: 0px auto;
+}
+
+.logo {
+	width: 824px;
 }
 
 .main {
@@ -39,7 +43,7 @@ a{
 .right-col {
 	width: 300px;
 	float: left;
-	margin-top: 50px;
+	margin-top: 340px;
 }
 
 .information {
@@ -56,11 +60,11 @@ a{
 
 
 .search-container {
-	margin: 50px auto;
+	margin: 0px auto;
 	display: block;
 }
 
-.search-container .logo{
+.search-container .logo-container{
 	text-align: center;
 }
 
